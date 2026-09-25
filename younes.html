@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#070308">
+<title>ملف يونس السري 🩸</title>
+<style>
+:root{--bg:#050307;--panel:#100a12;--panel2:#180d18;--red:#ff2147;--blood:#9b001d;--pink:#ff6b87;--text:#fff7fa;--muted:#b9aeb5;--line:rgba(255,255,255,.09)}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:
+radial-gradient(circle at 50% -5%,rgba(255,25,70,.16),transparent 34%),
+radial-gradient(circle at 10% 30%,rgba(96,0,50,.16),transparent 30%),
+#050307;color:var(--text);font-family:system-ui,-apple-system,"Segoe UI",Tahoma,Arial,sans-serif;overflow-x:hidden}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;opacity:.18;background-image:radial-gradient(rgba(255,255,255,.8) .7px,transparent .7px);background-size:19px 19px;mix-blend-mode:screen}
+a{color:inherit}
+button{font:inherit}
+.container{width:min(1120px,92vw);margin:auto}
+.intro{position:fixed;inset:0;z-index:1000;display:grid;place-items:center;background:
+radial-gradient(circle at 50% 45%,rgba(147,0,30,.28),transparent 24%),
+linear-gradient(135deg,#020203,#0b0307 48%,#020203);overflow:hidden;transition:opacity 1s ease,visibility 1s ease}
+.intro.hide{opacity:0;visibility:hidden;pointer-events:none}
+.intro:before,.intro:after{content:"";position:absolute;width:46vw;height:46vw;border:1px solid rgba(255,38,76,.17);border-radius:50%;animation:spin 12s linear infinite}
+.intro:after{width:70vw;height:70vw;border-style:dashed;animation-direction:reverse;animation-duration:19s}
+.intro-inner{width:min(900px,90vw);text-align:center;perspective:1200px}
+.kicker{font-size:13px;letter-spacing:.3em;color:#ff7e98;text-transform:uppercase;margin-bottom:20px}
+.intro-title{margin:0;font-weight:1000;line-height:.92;transform-style:preserve-3d;animation:introIn 2.2s cubic-bezier(.16,1,.3,1) both;text-shadow:
+0 2px 0 #850018,0 6px 0 #5e0012,0 12px 30px rgba(0,0,0,.7),0 0 50px rgba(255,25,60,.2)}
+.intro-title .big{display:block;font-size:clamp(82px,19vw,190px);background:linear-gradient(180deg,#fff 0%,#ffd9e0 24%,#ff3a5e 53%,#820014 100%);-webkit-background-clip:text;background-clip:text;color:transparent}
+.intro-title .small{display:block;font-size:clamp(22px,4.8vw,52px);margin-top:22px;color:#fff;transform:translateZ(65px)}
+.intro-note{margin:30px auto 0;max-width:720px;color:#cabcc2;font-size:14px;line-height:1.8;opacity:0;animation:fadeUp 1s 1.4s ease forwards}
+.enter{margin-top:25px;border:1px solid rgba(255,69,102,.65);background:linear-gradient(180deg,#ff385d,#b90026);color:white;padding:14px 25px;border-radius:999px;box-shadow:0 14px 45px rgba(255,30,65,.22);cursor:pointer;font-weight:800;opacity:0;animation:fadeUp 1s 1.8s ease forwards}
+.flicker{position:absolute;inset:auto 0 7%;font-size:12px;color:#5f4a52;text-align:center;letter-spacing:.12em;animation:pulse 2s ease-in-out infinite}
+header{position:sticky;top:0;z-index:40;background:rgba(5,3,7,.58);backdrop-filter:blur(16px);border-bottom:1px solid var(--line)}
+.nav{height:70px;display:flex;align-items:center;justify-content:space-between;gap:16px}
+.brand{font-weight:1000;letter-spacing:.04em}.brand span{color:var(--red)}
+.nav-badge{font-size:12px;color:#ffafbd;border:1px solid rgba(255,60,95,.28);padding:8px 12px;border-radius:999px}
+.hero{min-height:calc(100svh - 70px);display:grid;align-items:center;padding:80px 0}
+.hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:54px;align-items:center}
+.eyebrow{display:inline-flex;gap:8px;align-items:center;padding:8px 12px;border:1px solid rgba(255,255,255,.11);border-radius:999px;color:#ffafbd;background:rgba(255,255,255,.025);font-size:12px}
+h1{font-size:clamp(48px,8vw,94px);line-height:.96;margin:20px 0 18px;letter-spacing:-.045em}
+h1 em{font-style:normal;color:var(--red);text-shadow:0 0 35px rgba(255,31,64,.15)}
+.lead{font-size:clamp(17px,2.2vw,23px);line-height:1.8;color:#d8cdd2;max-width:720px}
+.fake-alert{display:flex;gap:10px;align-items:center;margin:22px 0 0;padding:12px 14px;border-left:3px solid var(--red);background:linear-gradient(90deg,rgba(255,27,62,.13),transparent);color:#ffc4ce}
+.card3d{position:relative;transform-style:preserve-3d;transition:transform .15s ease;will-change:transform}
+.photo-card{border-radius:28px;overflow:hidden;background:#0a080d;border:1px solid rgba(255,255,255,.1);box-shadow:0 35px 100px rgba(0,0,0,.6),0 0 80px rgba(255,22,65,.08)}
+.photo-card img{display:block;width:100%;height:auto;aspect-ratio:3/4;object-fit:cover;filter:saturate(.86) contrast(1.06)}
+.photo-glow{position:absolute;inset:auto -20% -20% 15%;height:42%;background:radial-gradient(circle,rgba(255,0,50,.25),transparent 68%);filter:blur(24px);pointer-events:none}
+.corner{position:absolute;top:16px;right:16px;padding:8px 10px;border-radius:12px;background:rgba(0,0,0,.54);backdrop-filter:blur(10px);font-size:11px;color:#ffb7c2;border:1px solid rgba(255,255,255,.12)}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:30px}
+.stat{padding:16px;border:1px solid var(--line);background:linear-gradient(145deg,rgba(255,255,255,.045),rgba(255,255,255,.01));border-radius:18px}
+.stat b{display:block;font-size:25px}.stat small{color:var(--muted);font-size:11px}
+.section{padding:90px 0}.section-head{display:flex;align-items:end;justify-content:space-between;gap:20px;margin-bottom:28px}
+.section h2{font-size:clamp(31px,5vw,58px);margin:0;line-height:1.05}
+.section-head p{max-width:540px;color:var(--muted);line-height:1.7;margin:0}
+.panel{padding:28px;border:1px solid var(--line);border-radius:26px;background:linear-gradient(145deg,rgba(255,255,255,.035),rgba(255,255,255,.012));box-shadow:inset 0 1px 0 rgba(255,255,255,.03)}
+.story{display:grid;grid-template-columns:1fr .8fr;gap:20px}
+.story p,.panel p{color:#cfc3c8;line-height:1.95}
+.quote{font-size:clamp(24px,4vw,40px);font-weight:950;line-height:1.25;color:#fff}
+.red{color:var(--red)}.muted{color:var(--muted)}
+.timeline{display:grid;gap:12px}
+.t-row{display:grid;grid-template-columns:92px 1fr;gap:14px;align-items:start;padding:16px;border:1px solid var(--line);border-radius:18px;background:rgba(255,255,255,.02)}
+.t-time{font-weight:950;color:#ff536f}
+.t-row p{margin:4px 0 0}
+.meter{margin-top:18px}.meter-top{display:flex;justify-content:space-between;margin-bottom:8px;color:#dacdd2}.bar{height:13px;border-radius:999px;background:#1e1017;overflow:hidden;border:1px solid var(--line)}.fill{width:98%;height:100%;background:linear-gradient(90deg,#670015,#ff2147,#ff7187);border-radius:inherit;box-shadow:0 0 22px rgba(255,31,71,.35);animation:grow 1.8s ease both}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.joke{font-size:16px;line-height:1.85}
+.badges{display:flex;flex-wrap:wrap;gap:10px;margin-top:20px}.badge{padding:10px 13px;border:1px solid rgba(255,255,255,.1);border-radius:999px;background:rgba(255,255,255,.03);color:#ded2d7;font-size:12px}
+.gallery{display:grid;grid-template-columns:1.1fr .9fr .9fr;gap:14px}
+.g{position:relative;overflow:hidden;border-radius:22px;border:1px solid var(--line);min-height:220px;background:#09070b}
+.g:nth-child(1){grid-row:span 2;min-height:460px}.g img{width:100%;height:100%;object-fit:cover;display:block;filter:saturate(.83) contrast(1.05)}.g:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 50%,rgba(0,0,0,.78))}
+.g span{position:absolute;bottom:14px;right:14px;left:14px;z-index:2;font-weight:800;font-size:14px}
+.victim{display:grid;grid-template-columns:.9fr 1.1fr;gap:22px;align-items:stretch}
+.victim-photo img{height:100%;min-height:360px;object-fit:cover;border-radius:24px;filter:saturate(.75) contrast(1.1) sepia(.08)}
+.victim-note{display:flex;flex-direction:column;justify-content:center}
+.big-warning{font-size:clamp(38px,7vw,78px);font-weight:1000;line-height:.95;color:#ff365e}
+.footer{padding:70px 0 90px;text-align:center;color:#8c7e85}
+.disclaimer{margin-top:22px;font-size:12px;line-height:1.7;color:#786a72}
+.reveal{opacity:0;transform:translateY(28px);transition:opacity .8s ease,transform .8s ease}.reveal.show{opacity:1;transform:none}
+.float{position:fixed;bottom:20px;left:20px;width:48px;height:48px;border-radius:50%;border:1px solid rgba(255,255,255,.14);background:rgba(12,7,13,.72);backdrop-filter:blur(14px);color:#fff;z-index:30;display:grid;place-items:center;box-shadow:0 12px 35px rgba(0,0,0,.35)}
+@keyframes introIn{0%{opacity:0;transform:rotateX(40deg) rotateY(-18deg) translateY(55px) scale(.76)}55%{opacity:1;transform:rotateX(-4deg) rotateY(4deg) translateY(-5px) scale(1.03)}100%{opacity:1;transform:rotateX(0) rotateY(0) translateY(0) scale(1)}}
+@keyframes fadeUp{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:none}}
+@keyframes spin{to{transform:rotate(360deg)}}@keyframes pulse{0%,100%{opacity:.3}50%{opacity:.8}}@keyframes grow{from{width:0}to{width:98%}}
+@media(max-width:850px){.hero-grid,.story,.victim,.grid2{grid-template-columns:1fr}.hero{padding:55px 0 70px}.stats{grid-template-columns:repeat(2,1fr)}.gallery{grid-template-columns:1fr 1fr}.g:nth-child(1){grid-column:span 2;grid-row:auto;min-height:360px}.section{padding:70px 0}.nav{height:62px}.nav-badge{display:none}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation-duration:.01ms!important;animation-iteration-count:1!important;scroll-behavior:auto!important;transition:none!important}}
+</style>
+</head>
+<body>
+<div class="intro" id="intro">
+  <div class="intro-inner">
+    <div class="kicker">FILE 001 • CLASSIFIED • ONLY FOR INSAAF</div>
+    <h1 class="intro-title"><span class="big">يونس</span><span class="small">وقصته “الحقيقية” — فقط لحبيبتي إنصاف 🩸</span></h1>
+    <p class="intro-note">تحقيق كوميدي خيالي 100% — أي تشابه مع الوقائع الحقيقية مجرد مصادفة 😂</p>
+    <button class="enter" id="enter">دخلي للقصة 🫣</button>
+  </div>
+  <div class="flicker">SYSTEM STATUS: VAMPIRE DETECTED • DANGER: UNREASONABLE</div>
+</div>
+
+<header>
+  <div class="container nav">
+    <div class="brand">YOUNES <span>// SECRET FILE</span></div>
+    <div class="nav-badge">🚨 ملف ساخر • سري بزاف</div>
+  </div>
+</header>
+
+<main>
+<section class="hero">
+  <div class="container hero-grid">
+    <div class="reveal">
+      <div class="eyebrow">🧛‍♂️ الموضوع: يونس • الحالة: خطيرة بشكل غير منطقي</div>
+      <h1>يونس… <em>اللطيف</em><br>اللي خاصك ما تثقش فيه 😂</h1>
+      <p class="lead">حسب الوثائق السرية الخيالية، يونس عندو <b>70 عام</b> وهو مازال كايحاول يقنع الناس بلي “غير دري صغير”. بالليل كايتبدل كلشي… وكاتبدأ عمليات البحث على العشاء. 🌙</p>
+      <div class="fake-alert"><b>تنبيه:</b> الشخصية كاتحاول تبان حنينة، ولكن عينها كتقلب غير على شي واحد مناسب للـmenu.</div>
+      <div class="badges">
+        <span class="badge">🩸 مصاص دماء منذ 70 عام</span><span class="badge">🌙 نشيط من بعد نص الليل</span><span class="badge">🛸 صديق فضائي سابق</span><span class="badge">⚠️ الخطورة: خرافية</span>
+      </div>
+      <div class="stats">
+        <div class="stat"><b>70</b><small>سنة ديال الخبرة “المفترضة”</small></div>
+        <div class="stat"><b>∞/10</b><small>مستوى الثقة فالوجه البريء</small></div>
+        <div class="stat"><b>01</b><small>أول ضحية فالقصة: إنصاف 😭</small></div>
+        <div class="stat"><b>03:17</b><small>الساعة المفضلة للحكايات المشبوهة</small></div>
+      </div>
+    </div>
+    <div class="card3d reveal" id="tilt">
+      <div class="photo-card">
+        <img src="younes/img1.svg" alt="يونس - صورة من الملف السري">
+        <div class="corner">EVIDENCE #01</div>
+      </div>
+      <div class="photo-glow"></div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+<div class="container">
+  <div class="section-head reveal"><div><div class="eyebrow">📁 الفصل الأول</div><h2>قصة بدأت فـ <span class="red">بيت الأحلام</span></h2></div><p>أحداث خيالية بأسلوب تحقيق رعب كوميدي. الهدف هو الضحك، ماشي نقل وقائع على أي شخص.</p></div>
+  <div class="story">
+    <div class="panel reveal">
+      <div class="quote">“كاين اللي كايسمع صوت بالليل… يونس كاايسمع غير صوت الجوع.”</div>
+      <p>فمدينة سميتها فهاد الملف <b>“بيت الأحلام فـ عالم الخلعبية”</b>، كايعيش واحد الكائن الغريب: كايدوي مزيان، كاايضحك، وكاايحاول يكون لطيف… حتى كاايسولك سؤال بسيط: <span class="red">“واش نتي آخر واحد غادي يبقى هنا؟”</span></p>
+      <p>وحسب الأسطورة الساخرة، كااين سر قديم: يونس كاايقلب على أحسن وقت باش يخرج فالليل، وكيعتبر “الهدوء” إشارة واضحة أن وقت العشاء قرب.</p>
+    </div>
+    <div class="panel reveal">
+      <div class="eyebrow">🚨 مؤشر الخطر</div>
+      <h3 style="font-size:34px;margin:16px 0 8px">خرافية</h3>
+      <p class="muted">النسبة مبالغ فيها عمداً باش يبقى الملف مضحك.</p>
+      <div class="meter"><div class="meter-top"><span>الخطورة</span><b>98%</b></div><div class="bar"><div class="fill"></div></div></div>
+      <div class="joke" style="margin-top:22px"><b>نقطة ضعف محتملة:</b><br>إلى شدّيتيه كاايدير راسو بريء ويقول: “أنا؟ شكون قال ليكم هادشي؟” 😭</div>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="section">
+<div class="container">
+  <div class="section-head reveal"><div><div class="eyebrow">🕛 الفصل الثاني</div><h2>شنو كاايدير بالليل؟</h2></div></div>
+  <div class="timeline">
+    <div class="t-row reveal"><div class="t-time">23:59</div><div><b>التحول الرسمي</b><p>كيحبس الضحك وكيبدأ داك النظرات اللي كاتخلي أي واحد يقول: “أنا غادي للدار دابا.”</p></div></div>
+    <div class="t-row reveal"><div class="t-time">00:30</div><div><b>مهمة إنصاف</b><p>كاايدوي مع إنصاف بهدوء بحال إلا ما كااين والو… بينما الملف كاايقول عكس ذلك تماماً. 😭</p></div></div>
+    <div class="t-row reveal"><div class="t-time">02:00</div><div><b>مرحلة “أنا ما غادي ناكل حد”</b><p>جملة موثوقة بنسبة 0% حسب قسم التحقيق الكوميدي.</p></div></div>
+    <div class="t-row reveal"><div class="t-time">03:17</div><div><b>اختفاء غامض</b><p>لا أحد يعرف فين مشى… ولكن كااين شك أن شي واحد كان خاصو يهرب قبل هاد الساعة.</p></div></div>
+  </div>
+</div>
+</section>
+
+<section class="section">
+<div class="container">
+  <div class="section-head reveal"><div><div class="eyebrow">🛸 الفصل الثالث</div><h2>قصة السيدة الفضائية</h2></div><p>الجزء اللي حتى يونس نفسه ما عندوش عليه جواب مقنع 😂</p></div>
+  <div class="grid2">
+    <div class="panel reveal"><div class="quote">“قال غادي يعاونها… ولكن القصة سالات بشي حاجة أخرى.”</div><p>نهار من الأيام، حسب الرواية الخيالية، يونس لقى سيدة غريبة جاية من الفضاء. حاول يساعدها باش ترجع لعالمها، عطاها النصائح، وقف معاها… وكلشي كان غادي مزيان.</p></div>
+    <div class="panel reveal"><p>ولكن فآخر لحظة، السيدة شمتاتو وقالت ليه باختصار: <span class="red"><b>“نتا ماشي اللي كنت كنظن.”</b></span></p><p>ومن داك النهار، دخل يونس فـ archive ديال الكائنات اللي خاصها تبقى بعيدة على أي بوابة فضائية. 🚫🛸</p></div>
+  </div>
+</div>
+</section>
+
+<section class="section">
+<div class="container">
+  <div class="section-head reveal"><div><div class="eyebrow">📸 EVIDENCE ROOM</div><h2>الصور اللي ما كانش خاصها تدخل فالملف</h2></div><p>كل صورة هنا مغطاة بتأثيرات رعب وكوميديا فقط، باش يتحول الملف لـ“تحقيق سينمائي”.</p></div>
+  <div class="gallery">
+    <div class="g reveal"><img src="younes/img2.svg" alt="دليل 2"><span>Evidence #02 — العين اللي كااتشوف العشاء قبل ما تشوف الناس 👁️</span></div>
+    <div class="g reveal"><img src="younes/img3.svg" alt="دليل 3"><span>Evidence #03 — تم اكتشافه وسط الغابة… كايبتاسم، وهادشي هو المشكل 😂</span></div>
+    <div class="g reveal"><img src="younes/img4.svg" alt="دليل 4"><span>Evidence #04 — حاول الاختباء، ولكن المصور لقاااه 😭</span></div>
+  </div>
+</div>
+</section>
+
+<section class="section">
+<div class="container">
+  <div class="victim">
+    <div class="victim-photo reveal"><img src="younes/img2.svg" alt="إنصاف - عنصر كوميدي في القصة"></div>
+    <div class="panel victim-note reveal">
+      <div class="eyebrow">🩸 CASE 001</div>
+      <h2 style="font-size:clamp(42px,7vw,80px);margin:16px 0 10px">إنصاف</h2>
+      <div class="big-warning">أول ضحية؟ 😭</div>
+      <p class="joke">حسب القصة الخيالية، إنصاف هي أول اسم دخل فـ الملف. كااين كلام على أن يونس كاايدوي معاها فالليل، وكاااين كلام أخطر: أنه كيحسبها “آخر طبق فالمنيو”.</p>
+      <p class="disclaimer">⚠️ هاد “الضحية” جزء من السيناريو الكوميدي فقط، وماشي ادعاء على وقائع حقيقية.</p>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="section">
+<div class="container">
+  <div class="panel reveal" style="text-align:center;padding:42px 24px">
+    <div class="eyebrow">📜 الحكم النهائي</div>
+    <h2 style="margin:22px 0 14px">يونس بريء… حتى يثبت أنه كان شاد شي واحد فـ المطبخ 🧛‍♂️</h2>
+    <p style="max-width:780px;margin:0 auto">الخلاصة الرسمية لهذا الملف السري: يونس كاايحاول يكون لطيف، كاايدير راسو ما عارف والو، ولكن فالنسخة السينمائية ديال القصة… الليل كااينقلو لواحد الشخصية أخرى تماماً.</p>
+    <div class="badges" style="justify-content:center;margin-top:25px"><span class="badge">💀 كااين خطر</span><span class="badge">😂 كااين ضحك</span><span class="badge">🩸 كااين دم… فالقصة فقط</span><span class="badge">❤️ موجهة لإنصاف</span></div>
+  </div>
+</div>
+</section>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div style="font-size:26px;font-weight:1000;color:#fff">يونس و قصته “الحقيقية” 🩸</div>
+    <div class="disclaimer">هاد الصفحة قصة خيالية ساخرة مصنوعة للضحك والترفيه فقط، وليست تقريراً حقيقياً ولا اتهاماً لأي شخص. الصور مستعملة داخل هذا السيناريو الكوميدي مع مؤثرات بصرية.</div>
+    <div style="margin-top:18px;font-size:12px">FILE 001 • ONLY FOR INSAFA • © Secret Department of Extremely Serious Nonsense</div>
+  </div>
+</footer>
+
+<button class="float" id="top" aria-label="إلى الأعلى">↑</button>
+
+<script>
+const intro=document.getElementById('intro');
+const enter=document.getElementById('enter');
+const hideIntro=()=>intro.classList.add('hide');
+enter.addEventListener('click',hideIntro);
+setTimeout(hideIntro,7000);
+
+const io=new IntersectionObserver((entries)=>entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('show')}),{threshold:.12});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+
+const tilt=document.getElementById('tilt');
+if(tilt && matchMedia('(pointer:fine)').matches){
+  tilt.addEventListener('pointermove',e=>{
+    const r=tilt.getBoundingClientRect(),x=(e.clientX-r.left)/r.width-.5,y=(e.clientY-r.top)/r.height-.5;
+    tilt.style.transform='rotateX('+(-y*8)+'deg) rotateY('+(x*10)+'deg) translateZ(10px)';
+  });
+  tilt.addEventListener('pointerleave',()=>tilt.style.transform='');
+}
+document.getElementById('top').onclick=()=>scrollTo({top:0,behavior:'smooth'});
+</script>
+</body>
+</html>
